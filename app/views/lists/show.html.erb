@@ -17,6 +17,10 @@
           <th>Purchase:</th>
           <td><%= @list.purchase %></td>
         </tr>
+        <tr>
+          <th>Produtos:</th>
+          <td><%= link_to 'Gerenciar', list_products_path(@list)  %></td>
+        </tr>
       </tbody>
     </table>
   </div>
