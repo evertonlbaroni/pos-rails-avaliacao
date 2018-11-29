@@ -1,6 +1,6 @@
-<h1>Editing List</h1>
+<legend>Editar Lista</legend>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @list %> |
-<%= link_to 'Back', lists_path %>
+<%= link_to 'Detalhes', @list, :class => 'btn btn-primary' %>
+<%= link_to 'Voltar', lists_path, :class => 'btn btn-danger'  %>
