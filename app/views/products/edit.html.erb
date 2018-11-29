@@ -1,0 +1,6 @@
+<legend>Editar Produto</legend>
+
+<%= render 'form' %>
+
+<%= link_to 'Detalhes', list_product_path(@list,@product), :class => 'btn btn-primary' %>
+<%= link_to 'Voltar', list_products_path(@list), :class => 'btn btn-danger' %>
