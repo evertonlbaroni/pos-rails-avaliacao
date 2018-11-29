@@ -1,6 +1,6 @@
 <%= form_for(@list) do |f| %>
   <% if @list.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(@list.errors.count, "error") %> prohibited this list from being saved:</h2>
       <ul>
       <% @list.errors.full_messages.each do |message| %>
@@ -25,7 +25,7 @@
     </div>
     <div class="col-md-12">
       <div class="field">
-        <%= f.label 'Puxar', :class => 'control-label' %>
+        <%= f.label 'Comprada', :class => 'control-label' %>
         <div class="checkbox">
           <%= f.check_box :purchase, :class => 'checkbox' %>
         </div>

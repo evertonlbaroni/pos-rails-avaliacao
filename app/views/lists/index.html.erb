@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<p id="notice" class="alert alert-info"><%= notice %></p>
 
 <legend>Listas</legend>
 
@@ -19,7 +19,7 @@
           <tr>
             <td><%= list.title %></td>
             <td><%= list.description %></td>
-            <td><%= list.purchase %></td>
+            <td><%= list.purchase ? "Comprada" : "Não C" %></td>
             <td >
               <%= link_to 'Detalhes', list, :class => 'btn btn-primary' %>
               <%= link_to 'Editar', edit_list_path(list), :class => 'btn btn-primary' %>
